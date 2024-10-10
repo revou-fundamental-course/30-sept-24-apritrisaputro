@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Mini Project RevoU - Website Konversi Suhu</h1>
+    <div class="container">
+        <div class="container-row">
+            <p>Masukkan suhu derajat Celsius (&#176;C) ke kotak dibawah ini, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&#176;F).</p>
+        </div>
+        <div class="container-row">
+            <p><b>Celsius (&#176;C) :</b></p>
+            <input type="number" id="celcius" class="form-control" placeholder="Masukkan Temperatur Suhu Dalam Celsius" required>
+        </div>
+        <div class="container-row">
+            <button type="button" class="btn btn-konversi" onclick="konversiCtoF()">Konversi</button>
+        </div>
+        <div class="container-row">
+            <p><b>Fahrenheit (&#176;F) :</b></p>
+            <input type="number" id="fahrenheit" class="form-control" placeholder="Masukkan Temperatur Suhu Dalam Fahrenheit" required>
+        </div>
+        <div class="container-row">
+            <button type="button" class="btn btn-konversi" onclick="konversiFtoC()">Konversi</button>
+            <button type="button" class="btn btn-reset" onclick="reset()">Reset</button>
+            <button type="button" class="btn btn-reserve" onclick="reverse()">Reserve</button>
+        </div>
+        <div class="container-row">
+            <p><b>Cara Kalkulasi :</b></p>
+            <input id="kalkulasi" type="text" class="form-control" placeholder="Rumus" disabled>
+        </div>
+        <div class="container-row">
+            <h5>Notes:</h5>
+            <h6 style="color: red;">*Untuk melakukan Konversi Suhu Fahrenheit ke Celsius, Anda harus menginput Temperatur Fahrenheit terlebih dahulu</h6>
+        </div>
+        <div class="container-row">
+            <h4>Cara Konversi dari Celsius (&#176;C) ke Fahrenheit (&#176;F)</h4>
+                <p>Suhu <i><span style="font-size: 1.3rem;">&#1029;</span></i> dalam derajat Fahrenheit sama dengan suhu <i><span style="font-size: 1.3rem;">&#1029;</span></i> dalam derajat Celsius dikali <span style="font-size: 1.3rem;">9/5</span> ditambah <span style="font-size: 1.3rem;">32</span></p>
+                <sup><i><span style="font-size: 1.3rem;">&#1029;</span></i></sup>(&#176;F) =  (<sup><i><span style="font-size: 1.3rem;">&#1029;</span></i></sup>(&#176;C) x <span style="font-size: 1.3rem;">9/5</span>) + <span style="font-size: 1.3rem;">32</span> </p>
+    
+                <p style="font-style: italic;">atau</p>
+                <p><sup><i><span style="font-size: 1.3rem;">&#1029;</span></i></sup>(&#176;F) =  (<sup><i><span style="font-size: 1.3rem;">&#1029;</span></i></sup>(&#176;C) x <span style="font-size: 1.3rem;">1.8</span>) + <span style="font-size: 1.3rem;">32</span></p>
+        </div>
+        <div class="container-row">
+            <h4>Cara Konversi dari Fahrenheit (&#176;F) ke Celsius (&#176;C)</h4>
+                <p>Suhu <i><span style="font-size: 1.3rem;">&#1029;</span></i> dalam derajat Celsius sama dengan suhu <i><span style="font-size: 1.3rem;">&#1029;</span></i> dalam derajat Fahrenheit dikurangi <span style="font-size: 1.3rem;">32</span> dikali <span style="font-size: 1.3rem;">5/9</span></p>
+
+                <p><sup><i><span style="font-size: 1.3rem;">&#1029;</span></i></sup>(&#176;C) =  (<sup><i><span style="font-size: 1.3rem;">&#1029;</span></i></sup>(&#176;F) - <span style="font-size: 1.3rem;">32</span>) * <span style="font-size: 1.3rem;">5/9</span></p>
+        </div>
+    </div>
+</body>
+</html>
